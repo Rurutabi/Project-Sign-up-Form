@@ -11,21 +11,77 @@
   <body>
     <div class="container">
       <section class="group1">
-        <div class="logo">ODIN</div>
+        <div class="logo">
+          <img src="odin-lined.png" alt="Odin-Logo" />
+          <h1>ODIN</h1>
+        </div>
       </section>
       <section class="group2">
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
-          to get started.
-        </p>
-        <p>You know you want to</p>
+        <div class="introduction-text">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <p>You know you want to</p>
+        </div>
         <form>
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" />
+          <div class="form-container">
+            <div class="user-input-box">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter Full Name"
+              />
+            </div>
+            <div class="user-input-box">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Enter Last Name"
+              />
+            </div>
+            <div class="user-input-box">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="user-input-box">
+              <label for="phoneNumber">Phone Number</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Enter Phone Number"
+              />
+            </div>
+            <div class="user-input-box">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="user-input-box">
+              <label for="password">Confirm Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+          </div>
         </form>
+        <div class="create-account">
+          <button>Create Account</button>
+          <p>Already have an account? Log in</p>
+        </div>
       </section>
     </div>
   </body>
