@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +7,6 @@
 
 body {
   font-family: Arial, sans-serif;
-}
-
-p {
-  margin-top: 12px;
 }
 
 .container {
@@ -30,9 +24,17 @@ p {
 }
 
 .logo {
-  font-size: 2.4rem;
-  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 4.8rem;
+  color: white;
   margin-top: 20%;
+  width: 100%;
+  height: 100px;
 }
 img {
   width: 50px;
@@ -43,30 +45,53 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 24px;
-  width: 400px;
+  width: 100%;
+}
+
+.introduction-text,
+.create-account {
+  padding-left: 12px;
+}
+form {
+  background-color: azure;
+
+  padding-left: 12px;
 }
 
 p,
 i,
-label {
+label,
+em {
   font-size: 1.2rem;
   color: #333;
   font-weight: bold;
 }
 
+a {
+  font-size: 1.2rem;
+  color: green;
+}
+
+a:hover {
+  color: rgb(12, 202, 75);
+}
+
 label {
   font-size: 1rem;
 }
-.introduction-text > p {
-  line-height: 1.5;
-  margin-bottom: 20px;
 
-  text-align: justify;
+.seperate-text {
+  margin-top: 20px;
+}
+
+.top {
+  margin-bottom: 10px;
 }
 
 .introduction-text {
-  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2; /* Adjust this value to your desired spacing */
 }
 
 .form-container {
@@ -85,9 +110,19 @@ label {
 input {
   width: 170px;
   line-height: 15px;
-  margin-right: 20px;
+  margin-right: 10px;
+  font-size: 1rem;
 }
 
+input:focus {
+  outline: none !important;
+  border: 1px solid green;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.create-account {
+  background-color: white;
+}
 .button-33 {
   background-color: #4caf50; /* Green */
   border: none;
@@ -97,4 +132,10 @@ input {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin-top: 12px;
+}
+
+.bottom {
+  margin-top: 12px;
+  margin-left: 12px;
 }
