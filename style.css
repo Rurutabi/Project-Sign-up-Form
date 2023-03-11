@@ -53,8 +53,7 @@ img {
   padding-left: 12px;
 }
 form {
-  background-color: azure;
-
+  background-color: pink;
   padding-left: 12px;
 }
 
@@ -92,6 +91,7 @@ label {
   display: flex;
   flex-direction: column;
   line-height: 1.2; /* Adjust this value to your desired spacing */
+  width: 60%;
 }
 
 .form-container {
