@@ -1,3 +1,8 @@
+:root {
+  --main-padding: 12px;
+  --main-margin: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +37,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 4.8rem;
   color: white;
-  margin-top: 20%;
+  margin-top: 25%;
   width: 100%;
   height: 100px;
 }
@@ -48,13 +53,24 @@ img {
   width: 100%;
 }
 
-.introduction-text,
-.create-account {
-  padding-left: 12px;
-}
 form {
+  margin-top: 32px;
   background-color: pink;
-  padding-left: 12px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 400px;
+  padding-top: var(--main-padding);
+}
+
+.introduction-text,
+.create-account,
+.form-container,
+.text {
+  padding-left: var(--main-padding);
 }
 
 p,
@@ -66,25 +82,13 @@ em {
   font-weight: bold;
 }
 
-a {
-  font-size: 1.2rem;
-  color: green;
-}
-
-a:hover {
-  color: rgb(12, 202, 75);
-}
-
 label {
   font-size: 1rem;
 }
 
 .seperate-text {
-  margin-top: 20px;
-}
-
-.top {
-  margin-bottom: 10px;
+  margin-top: var(--main-margin);
+  width: 50%;
 }
 
 .introduction-text {
@@ -92,14 +96,6 @@ label {
   flex-direction: column;
   line-height: 1.2; /* Adjust this value to your desired spacing */
   width: 60%;
-}
-
-.form-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px 0;
-  width: 400px;
 }
 
 .user-input-box {
@@ -123,7 +119,7 @@ input:focus {
 .create-account {
   background-color: white;
 }
-.button-33 {
+.create-btn {
   background-color: #4caf50; /* Green */
   border: none;
   color: white;
@@ -132,10 +128,53 @@ input:focus {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-top: 12px;
+  margin-top: var(--main-margin);
+}
+
+a {
+  font-size: 1.2rem;
+  color: green;
+}
+
+a:hover {
+  color: rgb(12, 202, 75);
 }
 
 .bottom {
-  margin-top: 12px;
-  margin-left: 12px;
+  margin-top: var(--main-margin);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .group1 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .group2 {
+    margin-top: var(--main-margin);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seperate-text {
+    width: 100%;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom {
+    margin-bottom: var(--main-margin);
+  }
 }
